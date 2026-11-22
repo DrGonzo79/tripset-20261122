@@ -22,7 +22,7 @@ jobs:
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
       - run: npm run build
-        env: {GITHUB_ACTIONS: "true"}
+        env: {PAGES_BUILD: "true"}
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with: {path: ./out}
