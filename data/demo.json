@@ -1,0 +1,11 @@
+{
+  "traveler":{"name":"Maya Chen","trip":"Chicago · 3 nights","program":"Tuesday strength","note":"Fictional demo profile"},
+  "equipment":[
+    {"id":"dumbbell","label":"Dumbbells to 50 lb"},{"id":"smith","label":"Smith machine"},{"id":"cable","label":"Cable stack to 80 lb"},{"id":"bench","label":"Adjustable bench"},{"id":"band","label":"Resistance bands"},{"id":"pullup","label":"Pull-up bar"}
+  ],
+  "workout":[
+    {"id":"trap-deadlift","name":"Trap-bar deadlift","scheme":"Top set · 5 reps","intent":"Heavy hinge","alternatives":[{"equipment":["smith"],"name":"Smith-machine Romanian deadlift","scheme":"3 × 8 · RPE 7","why":"Preserves loaded hinge without inventing ballistic work"},{"equipment":["dumbbell"],"name":"Dumbbell Romanian deadlift","scheme":"4 × 10 · controlled tempo","why":"Uses available load with tempo, within the hinge pattern"}]},
+    {"id":"split-squat","name":"Bulgarian split squat","scheme":"3 × 8 / side","intent":"Unilateral knee dominant","alternatives":[{"equipment":["bench","dumbbell"],"name":"Dumbbell Bulgarian split squat","scheme":"3 × 8 / side","why":"Exact movement intent with hotel equipment"},{"equipment":["dumbbell"],"name":"Rear-foot-down split squat","scheme":"3 × 10 / side","why":"Keeps unilateral intent when no safe rear-foot support exists"}]},
+    {"id":"lat-pulldown","name":"Lat pulldown","scheme":"3 × 10","intent":"Vertical pull","alternatives":[{"equipment":["cable"],"name":"Cable kneeling pulldown","scheme":"3 × 12","why":"Preserves vertical pull on the available stack"},{"equipment":["pullup"],"name":"Assisted pull-up","scheme":"4 × 5","why":"Same pattern, with conservative reps"}]}
+  ]
+}

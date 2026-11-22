@@ -1,0 +1,2 @@
+import {defineConfig,devices} from "@playwright/test";
+export default defineConfig({testDir:"./tests",workers:1,webServer:{command:"npm run dev",url:"http://localhost:3000",reuseExistingServer:!process.env.CI},use:{baseURL:"http://localhost:3000",trace:"on-first-retry",launchOptions:process.env.CI?{}:{executablePath:"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"}},projects:[{name:"desktop",use:{...devices["Desktop Chrome"]}},{name:"mobile",use:{viewport:{width:390,height:844},deviceScaleFactor:1}}]});
